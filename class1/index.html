@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 1: El Código Fuente</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo-area">
+            <div class="logo">
+                <div class="dot-container">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                </div>
+                <div class="TEI">
+                    <a href="../index.html"><span class="bracket">{</span> TEI <span class="bracket">}</span></a>
+                </div>
+            </div>
+            <span class="subtitle">curso_web_8vo.exe</span>
+        </div>
+        <div class="status-badge">🟢 Sistema Online</div>
+    </nav>
+
+    <main id="presentation-container">
+
+        <section class="slide active" id="slide-1">
+            <h1 class="glitch" data-text="<EL_CÓDIGO_FUENTE/>">&lt;EL_CÓDIGO_FUENTE/&gt;</h1>
+            <h3>Bienvenidos al Curso de Diseño Web</h3>
+            <p>Grado 8º | Tema: Arquitectura de Internet</p>
+            <button onclick="nextSlide()">Iniciar Sistema ➜</button>
+        </section>
+
+        <section class="slide" id="slide-2">
+            <h2>01. El Desarrollador</h2>
+            <div class="profile-card">
+                <div class="code-block">
+                    <p><span class="keyword">const</span> <span class="var">profesor</span> = {</p>
+                    <p>&nbsp;&nbsp;nombre: <span class="string">"Juan Camilo Sepúlveda"</span>,</p>
+                    <p>&nbsp;&nbsp;profesion: <span class="string">"Ingeniero Mecatrónico"</span>,</p>
+                    <p>&nbsp;&nbsp;rol: <span class="string">"Docente TEI"</span>,</p>
+                    <p>&nbsp;&nbsp;edad: <span class="string">"29"</span>,</p>
+                    <p>&nbsp;&nbsp;experiencia: <span class="string">"5 años"</span>,</p>
+                    <p>&nbsp;&nbsp;mision: <span class="string">"Enseñar el idioma de las máquinas"</span></p>
+                    <p>};</p>
+                </div>
+            </div>
+            <div class="interaction-area">
+                <p>¿Qué sientes frente a la tecnología?</p>
+                <button class="btn-outline" onclick="vote('easy')">Melo 😎</button>
+                <button class="btn-outline" onclick="vote('hard')">No entiendo nada 🤯</button>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-3">
+            <h2>02. Arquitectos de la Web</h2>
+            <p class="highlight-text">"Este año dejan de ser consumidores. Serán Creadores."</p>
+
+            <div class="curriculum-grid">
+                <div class="card">
+                    <h3>Periodo 1</h3>
+                    <div class="icon">💀</div>
+                    <p><strong>El Esqueleto</strong><br>HTML (Estructura)</p>
+                </div>
+                <div class="card">
+                    <h3>Periodo 2</h3>
+                    <div class="icon">🎨</div>
+                    <p><strong>La Piel</strong><br>CSS (Diseño)</p>
+                </div>
+                <div class="card">
+                    <h3>Periodo 3</h3>
+                    <div class="icon">🧠</div>
+                    <p><strong>El Cerebro</strong><br>JS (Lógica)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-4">
+            <h2>03. Acuerdos de Clase (EULA)</h2>
+            <p class="highlight-text">
+                Al usar esta sala, aceptas las reglas del sistema.
+            </p>
+
+            <div class="eula-container">
+                <ol class="eula-list">
+                    <li>
+                        <input type="checkbox">
+                        Respetar al docente y a los compañeros.
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Llegar puntualmente a la clase.
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Mantener silencio durante las explicaciones.
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Está prohibido comer o beber dentro del aula.
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Asumir responsabilidad por el puesto asignado (silla, mesa y computador).
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Reportar al docente el estado del computador, silla y mesa antes de iniciar la clase.
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        No modificar la configuración del computador.
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Si hay un correo o cuenta abierta, no explorarlo y cerrarlo de inmediato.
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Navegar únicamente en los sitios web autorizados por el docente.
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Apagar correctamente el computador antes de salir del aula.
+                    </li>
+                </ol>
+            </div>
+
+            <div class="agreement-box hidden" id="agreement-msg">
+                <h3>✔ Acuerdo Aceptado</h3>
+                <p>
+                    La primera falta genera un <strong>Acta de compromiso</strong> para corregir la conducta.<br>
+                    Las faltas repetidas se realizara la falta correspondiente,
+                    con una estrategia formativa acorde a la gravedad de la falta.
+                </p>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-5">
+            <h2>04. Depurando el Sistema</h2>
+            <p>Generemos el diagnóstico en tiempo real.</p>
+
+            <div class="debug-container">
+                <div class="input-zone">
+                    <input type="text" id="noteInput"
+                        placeholder="Escribe aquí un Bug (Dificultad) o Feature (Gusto)...">
+                    <div class="buttons">
+                        <button class="btn-bug" onclick="addNote('bug')">Reportar Bug 🐞</button>
+                        <button class="btn-feature" onclick="addNote('feature')">Sugerir Feature 🚀</button>
+                    </div>
+                </div>
+
+                <div class="board" id="board">
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-6">
+            <h2>Sistema Listo</h2>
+
+            <p class="highlight-text">
+                Todos los protocolos han sido cargados correctamente.
+            </p>
+
+            <div class="code-block">
+                <p><span class="keyword">status</span>: <span class="string">"Acuerdos aceptados"</span></p>
+                <p><span class="keyword">usuario</span>: <span class="string">"Estudiante habilitado"</span></p>
+                <p><span class="keyword">modo</span>: <span class="string">"Desarrollador"</span></p>
+            </div>
+
+            <p style="margin-top: 25px;">
+                A partir de este momento, dejás de ser solo usuario.<br>
+                <strong>Empiezas a crear.</strong>
+            </p>
+
+            <p class="highlight-text">
+                Próximo paso: <strong>Visual Studio Code</strong>
+            </p>
+
+            <p>
+                El entorno donde los programadores escriben,<br>
+                prueban y entienden el código.
+            </p>
+
+            <div class="console-cursor">_</div>
+        </section>
+
+    </main>
+
+    <div class="controls">
+        <button onclick="prevSlide()">❮ Anterior</button>
+        <button onclick="nextSlide()">Siguiente ❯</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
