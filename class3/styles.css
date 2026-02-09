@@ -1,0 +1,303 @@
+.title { margin-left: 15px; font-size: 0.9rem; opacity: 0.7; }
+
+#presentation2-container {
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-y: auto; /* Habilita scroll vertical */
+    height: 100%;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+    max-width: 1000px;
+    animation: fadeIn 0.5s ease;
+}
+
+.slide.active {
+    display: block;
+}
+
+h1 { font-size: 3rem; color: var(--accent-green); }
+h2 { color: var(--accent-blue); border-bottom: 2px solid var(--accent-blue); display: inline-block; padding-bottom: 5px; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+button {
+    background: var(--accent-green);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Fira Code', monospace;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 1rem;
+    transition: transform 0.2s;
+}
+button:hover { transform: scale(1.05); }
+
+.controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+.controls button { background: #21262d; border: 1px solid #30363d; margin: 0; }
+
+.hidden {
+    display: none;
+}
+
+/* ========== SLIDE VS CODE PRESENTATION ========== */
+
+.h2-entorno-desarrollo{
+    margin-top: 250px;
+}
+
+.editor-presentation {
+    margin-top: 30px;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* Barra superior tipo editor */
+.editor-header {
+    background: #161b22;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #30363d;
+}
+
+.editor-title {
+    margin-left: 15px;
+    font-size: 0.85rem;
+    color: #8b949e;
+}
+
+/* Cuerpo del editor */
+.editor-body {
+    background: #000;
+    height: 420px;
+    position: relative;
+}
+
+/* iframe de Genially o Canva */
+.editor-body iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Placeholder visual (opcional) */
+.presentation-placeholder {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #8b949e;
+    font-size: 0.95rem;
+    text-align: center;
+    border: 2px dashed #30363d;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.presentation-placeholder p:first-child {
+    color: var(--accent-blue);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.editor-footnote {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #8b949e;
+}
+
+
+/* ----------MAPA DE CONTENEDORES------------- */
+
+.h2-cont{
+    display: block;
+    margin-top: 1300px;
+}
+
+.html-cont{
+    width: 1000px;
+    background-color:beige;
+    padding: 5px;
+}
+
+.head{
+    margin: auto;
+    width: 950px;
+    border: solid red;
+    color: red;
+}
+
+.body{
+    margin: auto;
+    width: 900px;
+    border: solid blue;
+    color: blue;
+}
+
+/*=========MAIN STYLES==============*/
+.main{
+    margin: auto;
+    width: 850px;
+    border: solid magenta;
+    color: magenta;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    padding: 0;
+    place-items: center;
+}
+
+.main-sin-aside{
+    display: grid;
+    grid-template-rows: 20px 1fr 1fr 20px;
+    gap: 0;
+    padding: 0;
+    place-items: center;
+}
+
+.main-cierre{
+    grid-row: 4;
+    grid-column: 1;
+}
+
+/*================HEADER STYLES===============*/
+.header{
+    margin: auto;
+    width: 550px;
+    height: 500PX;
+    border: solid darkblue;
+    color: darkblue;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.titulo-principal{
+    margin: 10px;
+}
+
+.subtitulo{
+    display: block;
+    text-decoration: none;
+    border: none;
+    margin: 10px;
+}
+
+.header > span{
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+
+/*===========SECTIONS STYLES==============*/
+
+.section-grid{
+    grid-row: 3;
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 2;
+    gap: 20px;
+    
+}
+
+.section{
+    display: grid;
+    padding: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px 1fr 20px;
+    margin: auto;
+    width: 550px;
+    border: solid gray;
+    color: gray;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    place-items: center;
+}
+
+.article{
+    width: 250px; 
+    border: solid green; 
+    color: green;  
+    padding: 8px;
+}
+
+.section-label-1{
+    grid-row: 1;
+}
+
+.section-label-2{
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.article-1{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.article-2{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.p-container{
+    border: solid salmon;
+    color: salmon;
+}
+
+.article > a{
+    text-decoration: underline;
+    color: blue;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/*===========ASIDE=================*/
+
+.aside{
+    width: 150px;
+    border: solid orangered;
+    color: orangered;
+    margin: auto;
+    height: 90%;
+    text-align: center;
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+}
+
+.aside > span{
+    display: block;
+}
+
+/*=============FOOTER==============*/
+.footer{
+    border: solid goldenrod;
+    color: goldenrod;
+    margin: auto;
+    margin-top: 15px;
+    width: 95%;
+}
+

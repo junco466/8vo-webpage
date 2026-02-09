@@ -43,6 +43,16 @@ a{
     max-width: fit-content;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-container img {
+    height: 55px;
+}
+
 .dot { width: 12px; height: 12px; border-radius: 50%; }
 .red { background: var(--accent-red); }
 .yellow { background: var(--accent-yellow); }
