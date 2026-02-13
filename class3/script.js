@@ -29,16 +29,8 @@ function showSlide(n) {
                 }
             );
 
-            editor.setValue(`<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
+            editor.setValue(
+`<body>
     <header>
         <h1>SHEIN</h1>
         <h2>Compra ropa barata</h2>
@@ -68,9 +60,7 @@ function showSlide(n) {
             </article>
         </section>
     </main>
-</body>
-
-</html>`);
+</body>`);
 
             const preview = document.getElementById("previewFrame");
 
