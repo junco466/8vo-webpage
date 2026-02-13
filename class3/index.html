@@ -8,6 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="styles.css">
+    <!-- CodeMirror CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/material-darker.min.css">
+
+    <!-- CodeMirror JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/htmlmixed/htmlmixed.min.js"></script>
+
 </head>
 
 <body>
@@ -24,13 +34,16 @@
 
     <main id="presentation2-container">
 
+        <!----------------------------SLIDE 1 INDTRODUCCION------------------------------------>
         <section class="slide active" id="slide-1">
-            <h1 class="glitch" data-text="<EL_CÓDIGO_FUENTE/>">&lt;ENTORNO_DE_DESARROLLO<br>_Y_<br>DISPOSICION_DE_CONTENEDORES/&gt;</h1>
+            <h1 class="glitch" data-text="<EL_CÓDIGO_FUENTE/>">
+                &lt;ENTORNO_DE_DESARROLLO<br>_Y_<br>DISPOSICION_DE_CONTENEDORES/&gt;</h1>
             <h3>Bienvenidos al Curso de Diseño Web</h3>
             <p>Grado 8º | Tema: Arquitectura de Internet</p>
             <button onclick="nextSlide()">Iniciar Sistema ➜</button>
         </section>
 
+        <!----------------------------SLIDE 2 PRESENTACION DE VSCODE------------------------------------>
         <section class="slide" id="slide-2">
             <h2 class="h2-entorno-desarrollo">01. Entorno de Desarrollo</h2>
 
@@ -49,7 +62,8 @@
                 <div class="editor-body">
                     <!-- OPCIÓN 1: iframe (Genially / Canva) -->
                     <!-- Reemplaza src con tu enlace -->
-                    <iframe src="https://TU-LINK-DE-GENIALLY-O-CANVA" title="Presentación VS Code" allowfullscreen>
+                    <iframe src="https://www.canva.com/design/DAHBKk86FgM/X7gFcG-Wftd8bKJ6Cf_J1w/view?embed"
+                        title="Presentación VS Code" allowfullscreen="allowfullscreen" allow="fullscreen">
                     </iframe>
 
                     <!-- OPCIÓN 2: Placeholder visual si aún no tienes el link -->
@@ -62,11 +76,23 @@
                 </div>
             </div>
 
+            <!-- <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAHBKk86FgM/X7gFcG-Wftd8bKJ6Cf_J1w/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAHBKk86FgM&#x2F;X7gFcG-Wftd8bKJ6Cf_J1w&#x2F;view?utm_content=DAHBKk86FgM&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">El texto del párrafo</a> de Colegio San Ignacio -->
+
             <p class="editor-footnote">
-                ⚙️ Explora con atención: esta herramienta será tu laboratorio de creación.
+                ⚙️ Explora con atención: esta herramienta será tu laboratorio de creación.<br><br>
+                <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAHBKk86FgM&#x2F;X7gFcG-Wftd8bKJ6Cf_J1w&#x2F;view?utm_content=DAHBKk86FgM&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+                    target="_blank" rel="noopener">Link de la presentacion Visual Studio Code Training</a>
+
             </p>
         </section>
-
+        <!----------------------------SLIDE 3 CONTAINE MAP------------------------------------>
         <section class="slide" id="slide-3">
             <h2 class="h2-cont">01. Los Contenedores</h2>
             <div class="html-cont">
@@ -75,7 +101,7 @@
                     <span>&lt;head&gt</span>
                     <div class="body">
                         <span>&lt;body&gt</span>
-                        <div class="main">                           
+                        <div class="main">
                             <div class="main-sin-aside">
                                 <span>&lt;main&gt</span>
                                 <div class="header">
@@ -92,19 +118,23 @@
                                         <div class="article article-1">
                                             <span>&lt;article&gt</span>
                                             <p class="p-container">
-                                                <span>&lt;p&gt; Lorem ipsum dolor sit amet consectetur &lt;b&gt<b>adipisicing elit.</b>&lt;/b&gt
+                                                <span>&lt;p&gt; Lorem ipsum dolor sit amet consectetur
+                                                    &lt;b&gt<b>adipisicing elit.</b>&lt;/b&gt
                                                     Voluptate ex velit enim, necessitatibus accusamus. &lt;/p&gt;</span>
                                             </p>
-                                            <a href="#"><span>&lt;a&gt</span>Links de navegacion<span>&lt;/a&gt</span></a>
+                                            <a href="#"><span>&lt;a&gt</span>Links de
+                                                navegacion<span>&lt;/a&gt</span></a>
                                             <span>&lt;/article&gt</span>
                                         </div>
                                         <div class="article article-2">
                                             <span>&lt;article&gt</span>
                                             <p class="p-container">
-                                                <span>&lt;p&gt; Lorem ipsum dolor sit amet consectetur &lt;em&gt<em>adipisicing elit.&lt;/em&gt</em>
+                                                <span>&lt;p&gt; Lorem ipsum dolor sit amet consectetur
+                                                    &lt;em&gt<em>adipisicing elit.&lt;/em&gt</em>
                                                     Voluptate ex velit enim, necessitatibus accusamus. &lt;/p&gt;</span>
                                             </p>
-                                            <a href="#"><span>&lt;a&gt</span>Links de navegacion<span>&lt;/a&gt</span></a>
+                                            <a href="#"><span>&lt;a&gt</span>Links de
+                                                navegacion<span>&lt;/a&gt</span></a>
                                             <span>&lt;/article&gt</span>
                                         </div>
                                         <span class="section-label-2">&lt;/section&gt</span>
@@ -117,7 +147,8 @@
                                                 <span>&lt;p&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                     Voluptate ex velit enim, necessitatibus accusamus. &lt;/p&gt;</span>
                                             </p>
-                                            <a href="#"><span>&lt;a&gt</span>Links de navegacion<span>&lt;/a&gt</span></a>
+                                            <a href="#"><span>&lt;a&gt</span>Links de
+                                                navegacion<span>&lt;/a&gt</span></a>
                                             <span>&lt;/article&gt</span>
                                         </div>
                                         <div class="article article-2">
@@ -126,7 +157,8 @@
                                                 <span>&lt;p&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                     Voluptate ex velit enim, necessitatibus accusamus. &lt;/p&gt;</span>
                                             </p>
-                                            <a href="#"><span>&lt;a&gt</span>Links de navegacion<span>&lt;/a&gt</span></a>
+                                            <a href="#"><span>&lt;a&gt</span>Links de
+                                                navegacion<span>&lt;/a&gt</span></a>
                                             <span>&lt;/article&gt</span>
                                         </div>
                                         <span class="section-label-2">&lt;/section&gt</span>
@@ -159,6 +191,24 @@
                 </div>
                 <span>&lt;/html&gt</span>
             </div>
+        </section>
+
+        <!----------------------------SLIDE 4  CODE EDITOR------------------------------------>
+        <section class="slide" id="slide-4">
+            <div class="container-codeContainer">
+
+                <!-- EDITOR -->
+                <div class="editor">
+                    <textarea id="htmlEditor"></textarea>
+                </div>
+
+                <!-- PREVIEW -->
+                <div class="preview">
+                    <iframe class="code-iframe" id="previewFrame"></iframe>
+                </div>
+
+            </div>
+
         </section>
 
     </main>
