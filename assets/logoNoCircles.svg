@@ -1,0 +1,13 @@
+<svg width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+  <text x="12" y="16" 
+        font-family="'Courier New', monospace" 
+        font-weight="bold" 
+        font-size="13" 
+        text-anchor="middle" 
+        fill="#24292f"> 
+        
+        <tspan fill="#0969da">{</tspan>TEI<tspan fill="#0969da">}</tspan>
+  
+  </text>
+</svg>
