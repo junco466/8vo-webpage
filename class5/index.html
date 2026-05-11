@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEI | Taller HTML + CSS</title>
+    <link rel="icon" href="../assets/logoNoCircles.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-area">
+            <div class="logo">
+                <div class="dot-container">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                </div>
+                <div class="TEI">
+                    <a href="../index.html"><span class="bracket">{</span> TEI <span class="bracket">}</span></a>
+                </div>
+            </div>
+            <span class="subtitle">Tecnología e Informática - Grado 8º</span>
+        </div>
+        <div class="status-badge">🟢 Taller Online</div>
+    </nav>
+
+    <main class="dashboard-container workshop-container">
+        <section class="intro-section workshop-hero" id="inicio">
+            <div>
+                <p class="eyebrow">Clase 04 · Microlearning interactivo</p>
+                <h1>Taller en vivo: HTML + CSS</h1>
+                <p>Completa fragmentos de código, observa la vista previa y revisa si usaste las etiquetas y propiedades
+                    clave.</p>
+            </div>
+            <a href="../index.html" class="back-link">← Volver al hub</a>
+        </section>
+
+        <nav class="lesson-nav" aria-label="Navegación del taller">
+            <a href="#reto-1">01 HTML base</a>
+            <a href="#reto-2">02 Contenido</a>
+            <a href="#reto-3">03 CSS básico</a>
+            <a href="#reto-4">04 Flexbox</a>
+            <a href="#evaluacion">Evaluación</a>
+        </nav>
+
+        <section class="workshop-overview" aria-label="Descripción del taller">
+            <article class="mini-card">
+                <span class="mini-label">Objetivo</span>
+                <h2>Construir una página sencilla</h2>
+                <p>El estudiante identifica estructura HTML, etiquetas de contenido, atributos y estilos CSS básicos.
+                </p>
+            </article>
+
+            <article class="mini-card">
+                <span class="mini-label">Dinámica</span>
+                <h2>Aprender haciendo</h2>
+                <ol>
+                    <li>Lee la microlección.</li>
+                    <li>Completa los comentarios del editor.</li>
+                    <li>Actualiza la vista previa.</li>
+                    <li>Presiona “Revisar”.</li>
+                </ol>
+            </article>
+
+            <article class="mini-card">
+                <span class="mini-label">Temas</span>
+                <h2>HTML + CSS</h2>
+                <ul>
+                    <li>html, head, body, header, section, article, nav.</li>
+                    <li>h1-h6, p, ul, ol, li, img, a href, id y class.</li>
+                    <li>selectores, color, margin, padding, border, width, height, display y flex.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="challenge-card" id="reto-1">
+            <div class="challenge-header">
+                <div>
+                    <p class="eyebrow">Reto 01 · 5 minutos</p>
+                    <h2>Estructura básica de HTML</h2>
+                </div>
+                <span class="challenge-badge">HTML</span>
+            </div>
+
+            <p class="goal"><strong>Meta:</strong> completar una página con <code>html</code>, <code>head</code>,
+                <code>body</code>, <code>header</code>, <code>nav</code>, <code>section</code>, <code>article</code>,
+                <code>ul</code>, <code>ol</code> y <code>li</code>.</p>
+
+            <div class="concept-box">
+                <div class="concept-text">
+                    <h3>Microlección: ¿para qué sirve cada etiqueta?</h3>
+                    <p><code>&lt;html&gt;</code> contiene toda la página. <code>&lt;head&gt;</code> guarda información
+                        que no siempre se ve, como el título y los enlaces a CSS. <code>&lt;body&gt;</code> contiene lo
+                        visible para el usuario.</p>
+                    <p><code>&lt;header&gt;</code> presenta la página, <code>&lt;nav&gt;</code> agrupa enlaces de
+                        navegación, <code>&lt;section&gt;</code> divide temas y <code>&lt;article&gt;</code> representa
+                        un contenido independiente.</p>
+                    <p>Las listas se construyen con <code>&lt;ul&gt;</code> para viñetas, <code>&lt;ol&gt;</code> para
+                        numeración y <code>&lt;li&gt;</code> para cada elemento.</p>
+                </div>
+                <div class="example-card">
+                    <span class="example-label">Ejemplo</span>
+                    <pre><code>&lt;header&gt;
+  &lt;h1&gt;Mi sitio&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;section id="aprendizaje"&gt;
+  &lt;article class="tarjeta"&gt;
+    &lt;h2&gt;Tema&lt;/h2&gt;
+    &lt;ol&gt;
+      &lt;li&gt;HTML&lt;/li&gt;
+      &lt;li&gt;CSS&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/article&gt;
+&lt;/section&gt;</code></pre>
+                </div>
+            </div>
+
+            <div class="workspace">
+                <div class="editor-panel">
+                    <div class="panel-title">
+                        <span>Editor del estudiante</span>
+                        <button type="button" class="btn-small btn-outline" data-copy="code1">Copiar</button>
+                    </div>
+                    <textarea id="code1" spellcheck="false">
+</textarea>
+                    <div class="actions">
+                        <button type="button" class="btn-small" data-run="code1" data-frame="preview1">Actualizar
+                            vista</button>
+                        <button type="button" class="btn-small btn-muted" data-reset="1">Reiniciar</button>
+                        <button type="button" class="btn-small btn-check" data-check="1">Revisar</button>
+                    </div>
+                </div>
+
+                <div class="preview-panel">
+                    <div class="panel-title">Vista previa</div>
+                    <iframe id="preview1" title="Vista previa reto 1"></iframe>
+                </div>
+            </div>
+
+            <div class="feedback" id="feedback1">Completa el código y presiona “Revisar”.</div>
+
+            <details>
+                <summary>Pista</summary>
+                <p>Un ejemplo de sección puede ser: <code>&lt;section id="aprendizaje"&gt; ... &lt;/section&gt;</code>.
+                    Un artículo puede usar <code>class="tarjeta"</code>.</p>
+            </details>
+        </section>
+
+        <section class="challenge-card" id="reto-2">
+            <div class="challenge-header">
+                <div>
+                    <p class="eyebrow">Reto 02 · 6 minutos</p>
+                    <h2>Etiquetas de contenido, imágenes y enlaces</h2>
+                </div>
+                <span class="challenge-badge">HTML</span>
+            </div>
+
+            <p class="goal"><strong>Meta:</strong> usar títulos <code>h1</code> a <code>h6</code>, párrafos, listas,
+                imagen, enlace externo, enlace interno, <code>id</code> y <code>class</code>.</p>
+
+            <div class="concept-box">
+                <div class="concept-text">
+                    <h3>Microlección: contenido y atributos</h3>
+                    <p>Los títulos <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> organizan la jerarquía:
+                        <code>&lt;h1&gt;</code> es el título principal y los demás son subtítulos. El párrafo
+                        <code>&lt;p&gt;</code> sirve para escribir texto explicativo.</p>
+                    <p>La etiqueta <code>&lt;img&gt;</code> muestra imágenes. Usa <code>src</code> para la ruta,
+                        <code>alt</code> para describir la imagen, <code>width</code> para el ancho y <code>class</code>
+                        para aplicar estilos.</p>
+                    <p>Los enlaces <code>&lt;a href="..."&gt;</code> pueden ser externos, como una página web, o
+                        internos, como <code>#galeria</code>. <code>id</code> identifica un único elemento y
+                        <code>class</code> permite reutilizar estilos en varios elementos.</p>
+                </div>
+                <div class="example-card">
+                    <span class="example-label">Ejemplo</span>
+                    <pre><code>&lt;h1 id="arriba"&gt;Galería digital&lt;/h1&gt;
+&lt;p&gt;Esta sección muestra imágenes.&lt;/p&gt;
+
+&lt;a href="#galeria"&gt;Ir a galería&lt;/a&gt;
+&lt;a href="https://developer.mozilla.org/"&gt;MDN&lt;/a&gt;
+
+&lt;img src="https://picsum.photos/300/180"
+     alt="Imagen de práctica"
+     width="300"
+     class="foto"&gt;</code></pre>
+                </div>
+            </div>
+
+            <div class="workspace">
+                <div class="editor-panel">
+                    <div class="panel-title">
+                        <span>Editor del estudiante</span>
+                        <button type="button" class="btn-small btn-outline" data-copy="code2">Copiar</button>
+                    </div>
+                    <textarea id="code2" spellcheck="false">
+</textarea>
+                    <div class="actions">
+                        <button type="button" class="btn-small" data-run="code2" data-frame="preview2">Actualizar
+                            vista</button>
+                        <button type="button" class="btn-small btn-muted" data-reset="2">Reiniciar</button>
+                        <button type="button" class="btn-small btn-check" data-check="2">Revisar</button>
+                    </div>
+                </div>
+
+                <div class="preview-panel">
+                    <div class="panel-title">Vista previa</div>
+                    <iframe id="preview2" title="Vista previa reto 2"></iframe>
+                </div>
+            </div>
+
+            <div class="feedback" id="feedback2">Completa el código y presiona “Revisar”.</div>
+
+            <details>
+                <summary>Pista</summary>
+                <p>Una imagen puede usar:
+                    <code>&lt;img src="https://picsum.photos/300/180" alt="Imagen de práctica" width="300" class="foto"&gt;</code>.
+                </p>
+            </details>
+        </section>
+
+        <section class="challenge-card" id="reto-3">
+            <div class="challenge-header">
+                <div>
+                    <p class="eyebrow">Reto 03 · 7 minutos</p>
+                    <h2>Relación HTML + CSS y selectores</h2>
+                </div>
+                <span class="challenge-badge css-badge">CSS</span>
+            </div>
+
+            <p class="goal"><strong>Meta:</strong> reconocer
+                <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>, usar selectores de etiqueta y clase, y
+                aplicar propiedades CSS básicas.</p>
+
+            <div class="concept-box">
+                <div class="concept-text">
+                    <h3>Microlección: conectar CSS y crear reglas</h3>
+                    <p>HTML define la estructura y CSS define la apariencia. Para conectar una hoja externa se usa
+                        <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code> dentro de
+                        <code>&lt;head&gt;</code>.</p>
+                    <p>Un selector de etiqueta aplica estilos a todos los elementos de ese tipo, por ejemplo
+                        <code>p</code> o <code>body</code>. Un selector de clase empieza con punto, por ejemplo
+                        <code>.tarjeta</code>, y afecta a los elementos que tengan esa clase.</p>
+                    <p>Propiedades como <code>background-color</code>, <code>color</code>, <code>font-size</code>,
+                        <code>margin</code>, <code>padding</code>, <code>border</code>, <code>width</code>,
+                        <code>height</code>, <code>text-align</code>, <code>text-decoration</code> y
+                        <code>list-style</code> modifican el diseño.</p>
+                </div>
+                <div class="example-card">
+                    <span class="example-label">Ejemplo</span>
+                    <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;
+
+body {
+  background-color: #f1f5f9;
+  color: #111827;
+  font-size: 18px;
+}
+
+.tarjeta {
+  margin: 20px;
+  padding: 16px;
+  border: 2px solid #2563eb;
+  width: 300px;
+  height: 180px;
+}</code></pre>
+                </div>
+            </div>
+
+            <div class="workspace">
+                <div class="editor-panel">
+                    <div class="panel-title">
+                        <span>Editor del estudiante</span>
+                        <button type="button" class="btn-small btn-outline" data-copy="code3">Copiar</button>
+                    </div>
+                    <textarea id="code3" spellcheck="false">
+</textarea>
+                    <div class="actions">
+                        <button type="button" class="btn-small" data-run="code3" data-frame="preview3">Actualizar
+                            vista</button>
+                        <button type="button" class="btn-small btn-muted" data-reset="3">Reiniciar</button>
+                        <button type="button" class="btn-small btn-check" data-check="3">Revisar</button>
+                    </div>
+                </div>
+
+                <div class="preview-panel">
+                    <div class="panel-title">Vista previa</div>
+                    <iframe id="preview3" title="Vista previa reto 3"></iframe>
+                </div>
+            </div>
+
+            <div class="feedback" id="feedback3">Completa el código y presiona “Revisar”.</div>
+
+            <details>
+                <summary>Pista</summary>
+                <p>Ejemplos: <code>background-color: #f1f5f9;</code>, <code>font-size: 18px;</code>,
+                    <code>border: 2px solid #2563eb;</code>, <code>list-style: square;</code>.</p>
+            </details>
+        </section>
+
+        <section class="challenge-card" id="reto-4">
+            <div class="challenge-header">
+                <div>
+                    <p class="eyebrow">Reto 04 · 7 minutos</p>
+                    <h2>Display: block, inline y flex</h2>
+                </div>
+                <span class="challenge-badge css-badge">CSS</span>
+            </div>
+
+            <p class="goal"><strong>Meta:</strong> aplicar <code>display: block</code>, <code>display: inline</code>,
+                <code>display: flex</code> y <code>justify-content</code>.</p>
+
+            <div class="concept-box">
+                <div class="concept-text">
+                    <h3>Microlección: cómo se acomodan los elementos</h3>
+                    <p><code>display: block</code> hace que un elemento ocupe una línea completa. Es común en
+                        <code>section</code>, <code>article</code>, <code>div</code> y títulos.</p>
+                    <p><code>display: inline</code> permite que los elementos estén en la misma línea. Es común en
+                        enlaces o fragmentos cortos de texto.</p>
+                    <p><code>display: flex</code> convierte un contenedor en una fila o columna flexible. Con
+                        <code>justify-content</code> se controla cómo se distribuyen los elementos: al centro, separados
+                        o hacia los extremos.</p>
+                </div>
+                <div class="example-card">
+                    <span class="example-label">Ejemplo</span>
+                    <pre><code>.menu {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.menu a {
+  display: inline;
+}
+
+.card {
+  display: block;
+  margin: 10px;
+  padding: 12px;
+  border: 1px solid #30363d;
+}</code></pre>
+                </div>
+            </div>
+
+            <div class="workspace">
+                <div class="editor-panel">
+                    <div class="panel-title">
+                        <span>Editor del estudiante</span>
+                        <button type="button" class="btn-small btn-outline" data-copy="code4">Copiar</button>
+                    </div>
+                    <textarea id="code4" spellcheck="false">
+</textarea>
+                    <div class="actions">
+                        <button type="button" class="btn-small" data-run="code4" data-frame="preview4">Actualizar
+                            vista</button>
+                        <button type="button" class="btn-small btn-muted" data-reset="4">Reiniciar</button>
+                        <button type="button" class="btn-small btn-check" data-check="4">Revisar</button>
+                    </div>
+                </div>
+
+                <div class="preview-panel">
+                    <div class="panel-title">Vista previa</div>
+                    <iframe id="preview4" title="Vista previa reto 4"></iframe>
+                </div>
+            </div>
+
+            <div class="feedback" id="feedback4">Completa el código y presiona “Revisar”.</div>
+
+            <details>
+                <summary>Pista</summary>
+                <p>Para flex puedes usar: <code>display: flex;</code>, <code>gap: 12px;</code>,
+                    <code>justify-content: space-between;</code> o <code>justify-content: center;</code>.</p>
+            </details>
+        </section>
+
+        <section class="challenge-card" id="evaluacion">
+            <div class="challenge-header">
+                <div>
+                    <p class="eyebrow">Cierre</p>
+                    <h2>Evaluación rápida</h2>
+                </div>
+                <span class="challenge-badge">Rúbrica</span>
+            </div>
+
+            <div class="concept-box single-concept">
+                <div class="concept-text">
+                    <h3>Preguntas de cierre</h3>
+                    <p>Antes de finalizar, pide al estudiante explicar con sus palabras: qué va en <code>head</code>,
+                        qué va en <code>body</code>, cuándo usar <code>id</code>, cuándo usar <code>class</code> y cómo
+                        se conecta un archivo CSS externo.</p>
+                </div>
+            </div>
+
+            <div class="rubric-grid">
+                <article>
+                    <h3>HTML semántico</h3>
+                    <p>Usa correctamente <code>header</code>, <code>nav</code>, <code>section</code>,
+                        <code>article</code> y listas.</p>
+                </article>
+                <article>
+                    <h3>Contenido</h3>
+                    <p>Incluye títulos, párrafos, imagen con <code>alt</code>, enlaces internos y externos.</p>
+                </article>
+                <article>
+                    <h3>CSS básico</h3>
+                    <p>Aplica colores, tamaños, márgenes, padding, bordes, ancho, alto y alineación.</p>
+                </article>
+                <article>
+                    <h3>Distribución</h3>
+                    <p>Diferencia <code>block</code>, <code>inline</code> y <code>flex</code>, y usa
+                        <code>justify-content</code>.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>Desarrollado por Ing. Juan Camilo Sepúlveda © 2026</p>
+    </footer>
+</body>
+
+</html>

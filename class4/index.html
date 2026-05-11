@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEI | Hub de Desarrollo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- CodeMirror CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/material-darker.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css" rel="stylesheet" />
+
+
+    <!-- CodeMirror JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/htmlmixed/htmlmixed.min.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo-area">
+            <div class="logo-container">
+                <a href="../index.html" class="brand"><img src="../assets/logoDark.svg" alt="tei logo"></a>
+            </div>
+            <span class="subtitle">Tecnología e Informática - Grado 8º</span>
+        </div>
+        <div class="status-badge">🟢 Sistema Online</div>
+    </nav>
+
+    <main id="presentation2-container">
+
+        <!----------------------------SLIDE 1 INDTRODUCCION------------------------------------>
+        <section class="slide active" id="slide-1">
+            <h1 class="glitch" data-text="<EL_CÓDIGO_FUENTE/>">
+                &lt;Listas<br> Y <br>Navegacion/&gt;</h1>
+            <h3>Curso de Diseño Web</h3>
+            <p>Grado 8º | Tema: Listas ordenadas, listas no ordenadas y navegacion</p>
+            <button onclick="nextSlide()">Iniciar Sistema ➜</button>
+        </section>
+
+        <!----------------------------SLIDE 2 PRESENTACION DE VSCODE------------------------------------>
+        <section class="slide template-section" id="slide-2">
+            <h2 class="h2-entorno-desarrollo">01. Plantilla portafolio</h2>
+                <div class="code-container">
+
+                <pre class="code- block">
+<code class="language-html">
+&lt;header&gt;
+  &lt;h1&gt;Juan Pérez&lt;/h1&gt;
+  &lt;p&gt;Estudiante de Desarrollo Web&lt;/p&gt;
+&lt;/header&gt;
+
+&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#inicio"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#sobre-mi"&gt;Sobre mí&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#habilidades"&gt;Habilidades&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#proyectos"&gt;Proyectos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#contacto"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;main&gt;
+
+  &lt;section id="inicio"&gt;
+    &lt;h2&gt;Inicio&lt;/h2&gt;
+    &lt;p&gt;Bienvenidos a mi página web.&lt;/p&gt;
+  &lt;/section&gt;
+
+  &lt;section id="sobre-mi"&gt;
+    &lt;h2&gt;Sobre mí&lt;/h2&gt;
+    &lt;p&gt;Soy estudiante de grado octavo.&lt;/p&gt;
+  &lt;/section&gt;
+
+  &lt;section id="habilidades"&gt;
+    &lt;h2&gt;Habilidades&lt;/h2&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Trabajo en equipo&lt;/li&gt;
+      &lt;li&gt;Creatividad&lt;/li&gt;
+      &lt;li&gt;Desarrollo web básico&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/section&gt;
+
+  &lt;section id="proyectos"&gt;
+    &lt;h2&gt;Proyectos&lt;/h2&gt;
+    &lt;article&gt;
+      &lt;h3&gt;Proyecto 1&lt;/h3&gt;
+      &lt;p&gt;Página de venta de tenis en Medellín.&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/section&gt;
+
+  &lt;section id="contacto"&gt;
+    &lt;h2&gt;Contacto&lt;/h2&gt;
+    &lt;p&gt;Email: juan@email.com&lt;/p&gt;
+  &lt;/section&gt;
+
+&lt;/main&gt;
+</code>
+    </pre>
+                </div>
+
+    <p class="template-note">
+        🚫 Copiar está deshabilitado. Escríbelo manualmente.
+    </p>
+
+        </section>
+
+    </main>
+
+    <div class="controls">
+        <button onclick="prevSlide()">❮ Anterior</button>
+        <button onclick="nextSlide()">Siguiente ❯</button>
+    </div>
+
+    <footer class="main-footer">
+        <p>Desarrollado por Ing. Juan Camilo Sepúlveda © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-markup.min.js"></script>
+
+</body>
+
+</html>

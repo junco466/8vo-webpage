@@ -1,5 +1,5 @@
 let currentSlide = 1;
-const totalSlides = 4;
+const totalSlides = 2;
 let editor = null; // ← importante
 
 function showSlide(n) {
@@ -85,3 +85,12 @@ function prevSlide() {
 
 // Inicializar primera slide
 showSlide(currentSlide);
+
+document.addEventListener("copy", e => e.preventDefault());
+document.addEventListener("contextmenu", e => e.preventDefault());
+
+document.addEventListener("keydown", function(e) {
+    if (e.ctrlKey && (e.key === "c" || e.key === "u")) {
+        e.preventDefault();
+    }
+});
