@@ -171,7 +171,7 @@ button:hover { transform: scale(1.05); }
 
 .main-sin-aside{
     display: grid;
-    grid-template-rows: 20px 1fr 1fr 20px;
+    grid-template-rows: 20px 1fr 20px;
     gap: 0;
     padding: 0;
     place-items: center;
@@ -185,12 +185,13 @@ button:hover { transform: scale(1.05); }
 /*================HEADER STYLES===============*/
 .header{
     margin: auto;
-    width: 550px;
+    width: 850px;
     height: 500PX;
     border: solid darkblue;
     color: darkblue;
-    grid-row: 2;
-    grid-column: 1;
+    margin-bottom: 20px;
+    /* grid-row: 2;
+    grid-column: 1; */
 }
 
 .titulo-principal{
@@ -213,7 +214,7 @@ button:hover { transform: scale(1.05); }
 /*===========SECTIONS STYLES==============*/
 
 .section-grid{
-    grid-row: 3;
+    grid-row: 2;
     grid-column: 1;
     display: grid;
     grid-template-rows: 2;
@@ -229,7 +230,7 @@ button:hover { transform: scale(1.05); }
     margin: auto;
     width: 550px;
     border: solid gray;
-    color: gray;
+    color: gray ;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -351,4 +352,9 @@ button:hover { transform: scale(1.05); }
     font-size: 14px;
     border-right: 1px solid #30363d;
     text-align: left !important;
+}
+
+.html-label{
+    color: brown;
+    font-weight:bold;
 }
